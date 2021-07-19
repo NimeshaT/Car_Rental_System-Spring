@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car_Rental</title>
+    <Link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <LINK href="assests/css/main.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <LINK rel="stylesheet" href="assests/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="GuestUserHome" style="color: white">Car Rental System</a>
+            <div class="d-flex" id="navbarSupportedContent">
+                <button class="btn btn-outline-warning" type="submit" id="registerButton">Register</button>
+                <button class="btn btn-outline-warning" type="submit" id="loginButton">LogIn</button>
+            </div>
+        </div>
+    </nav>
+    <!--    <hr/>-->
+</header>
+<main>
+    <!--    /////////////////////////////////////////CarDetails/////////////////////////////////////////////-->
+    <div class="carDetails">
+       <h1 >Car Details</h1> <i class="fas fa-car" style="width: 450px"></i>
+        <hr/>
+        <div class="car-details-section" style="overflow-y: scroll; overflow-x: scroll">
+            <table class="table table-hover table-bordered" id="guestCarTable" >
+                <thead>
+                <tr>
+                    <th scope="col">registrationNo</th>
+                    <th scope="col">brand</th>
+                    <th scope="col">type</th>
+                    <th scope="col">frontImage</th>
+                    <th scope="col">numberOfPassengers</th>
+                    <th scope="col">transmissionType</th>
+                    <th scope="col">fuelType</th>
+                    <th scope="col">color</th>
+                    <th scope="col">dailyRate</th>
+                    <th scope="col">monthlyRate</th>
+                    <th scope="col">freeMileagePerDay</th>
+                    <th scope="col">freeMileagePerMonth</th>
+                    <th scope="col">pricePerKm</th>
+                    <th scope="col">kmMeterValue</th>
+                    <th scope="col">lastReturnDate</th>
+                    <th scope="col">isAvailable</th>
+                    <th scope="col">isDamaged</th>
+                    <th scope="col">underMaintenance</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!--    /////////////////////////////////////////Registration/////////////////////////////////////////////-->
+    <div class="registration">
+        <div class="img-fluid">
+            <div class="bg-img">
+                <form id="box">
+                    <h1 style="color:white;font-family:'Pacifico', cursive">Registration</h1>
+
+
+                    <label><b>Name</b></label><br/>
+                    <input type="text" name="name" style="width:350px;" id="name" required><br/>
+
+                    <label><b>NIC</b></label><br/>
+                    <input type="text" name="nic" style="width:350px;" id="nic" required><br/>
+
+                    <label><b>Email</b></label><br/>
+                    <input type="text" name="email" style="width:350px;" id="email" required><br/>
+
+                    <label><b>Password</b></label><br/>
+                    <input type="password" name="password" style="width:350px;" id="password" required><br/>
+
+                    <label><b>Image</b></label><br/>
+                    <input type="file" name="idPhoto" style="width:350px;" id="idPhoto" required><br/>
+
+                    <label><b>Address</b></label><br/>
+                    <input type="text" name="address" style="width:350px;" id="address" required><br/>
+
+                    <label><b>Contact</b></label><br/>
+                    <input type="text" name="contact" style="width:350px;" id="contact" required><br/><br/>
+
+                    <!--                <label><b><?=$L["confirm"] ?></b></label><br/>-->
+                    <!--                <input type="password" name="confirm" style="width:350px;" required><br/><br/>-->
+
+                    <!--                <input type="reset" value="<?=$L[" reset"]?>" class="btn btn-danger">-->
+                    <button type="button" class="btn btn-primary" id="saveBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="assests/js/bootstrap.min.js"></script>
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="assests/js/main.js"></script>
+</body>
+</html>
